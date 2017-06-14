@@ -1,4 +1,4 @@
 # dockermpi
 
-you can use this image using docker-compose
+you can use this image with docker-compose
 

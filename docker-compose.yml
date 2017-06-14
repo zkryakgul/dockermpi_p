@@ -1,0 +1,14 @@
+mpi_head:
+  image: zkryakgul/dockermpi
+  
+  ports: 
+   - "22"
+  links: 
+   - mpi_node
+  volumes:
+   - /opt2/jobs:/home/tutorial/mpi4py_benchmarks/jobs
+
+mpi_node: 
+  image: dispel4py/docker.openmpi
+  volumes:
+   - /opt2/jobs:/home/tutorial/mpi4py_benchmarks/jobs
